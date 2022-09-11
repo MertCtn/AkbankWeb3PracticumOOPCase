@@ -1,5 +1,5 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Gişe {
 
@@ -14,7 +14,7 @@ public class Gişe {
 
 
     public void ÖdemeAl(Araç geçenAraç){
-        Date geçişTarihi = new Date();
+        LocalDate geçişTarihi = LocalDate.now();
         int geçişKatsayısı = geçenAraç.getAraçSınıfı();
 
         geçenAraç.setBakiye(geçenAraç.getBakiye() - standartGeçişÜcreti*geçişKatsayısı);

@@ -1,9 +1,9 @@
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Yönetim {
 
-    Date tarih = new Date();
+    LocalDate tarih = LocalDate.now(); 
 
     public void yönetimBilgiSistemi(){
         Scanner sc = new Scanner(System.in);
