@@ -1,7 +1,4 @@
 
-import java.util.ArrayList;
-import java.util.Date;
-
 public abstract class Araç {
 
     private String HGSNumarası;
@@ -9,7 +6,6 @@ public abstract class Araç {
     private String sürücüSoyAdı;
 
     private int bakiye;
-    ArrayList<Date> geçişTarihleri;  // Tüm geçiş tarihleri her araç için ayrı bir arraylistte tutulacak 
 
     private int araçSınıfı; // Otomobil = 1, Minibüs = 2, Otobüs=3
     
