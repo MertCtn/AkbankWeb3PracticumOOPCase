@@ -9,12 +9,12 @@ public abstract class Araç {
     private String sürücüSoyAdı;
 
     private int bakiye;
-    ArrayList<Date> geçişTarihleri;  // Tüm geçiş tarihleri her araç için bir arraylistte tutulacak 
+    ArrayList<Date> geçişTarihleri;  // Tüm geçiş tarihleri her araç için ayrı bir arraylistte tutulacak 
 
-    private byte araçSınıfı; // Otomobil = 1, Minibüs = 2, Otobüs=3
+    private int araçSınıfı; // Otomobil = 1, Minibüs = 2, Otobüs=3
     
     
-    Araç(String HGSNumarası , String sürücüAdı , String sürücüSoyadı , int bakiye){
+    Araç(String HGSNumarası,String sürücüAdı,String sürücüSoyadı,int bakiye){
 
         this.HGSNumarası = HGSNumarası;
         this.sürücüAdı = sürücüAdı;
@@ -23,11 +23,11 @@ public abstract class Araç {
 
     }
 
-    public void setAraçSınıfı (byte araçSınıfı){
+    public void setAraçSınıfı (int araçSınıfı){
         this.araçSınıfı = araçSınıfı;
     }
 
-    public byte getAraçSınıfı(){
+    public int getAraçSınıfı(){
         return araçSınıfı;
     }
 
@@ -37,6 +37,18 @@ public abstract class Araç {
 
     public int getBakiye(){
         return bakiye;
+    }
+
+    public String getHGSNumarası(){
+        return HGSNumarası;
+    }
+
+    public String getSürücüAdı(){
+        return sürücüAdı;
+    }
+
+    public String getSürücüSoyAdı(){
+        return sürücüSoyAdı;
     }
 
 
